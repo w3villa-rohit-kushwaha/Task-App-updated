@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- External stylesheet links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Modal Background -->
+      <div id="modal-background">
+        <div id="modal">
+          <!-- Close Modal Button -->
+          <button id="close-modal">&times;</button>
+                <!-- Table to display tasks -->
+      <h1 id="edited_task">Task App</h1>
+
+      <!-- Form to input tasks -->
+      <form id="task-form">
+        <label for="task-name">Task Name:</label>
+        <input type="text" id="task-name" required>
+
+        <label for="due-date">Due Date:</label>
+        <input type="date" id="due-date" required>
+
+        <label for="task-description">Task Description:</label>
+        <textarea id="task-description" required></textarea>
+
+        <button type="submit" id="submit">Add Task</button><br>
+      </form>
+    </div>
+  </div>
+
+  <!-- Add New Task Button -->
+  <button id="open-modal">Add New Task</button>
+
+  <!-- Table to display tasks -->
+  <div id="task-table">
+    <table id="task-row"></table>
+  </div>
+</div>
+
+<!-- JavaScript file link -->
+<script src="script.js"></script>
